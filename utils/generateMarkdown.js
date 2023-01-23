@@ -24,7 +24,7 @@ function renderLicenseLink(license) {
     return `[Apache 2 Link](https://www.apache.org/licenses/LICENSE-2.0.txt)`
   }
   if (licenseLink === 'GNU_GPL_3') {
-    return `[GNU_GPL_3]('https://www.gnu.org/licenses/gpl-3.0.txt')`
+    return `[GNU_GPL_3](https://www.gnu.org/licenses/gpl-3.0.txt)`
   }
   else {
     return ``
@@ -37,7 +37,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
 
   if(license === 'None'){
-    return '';
+    return 'N/A';
 
   } else {
 
@@ -57,6 +57,8 @@ function generateMarkdown(data) {
 
   return `
   # ${data.title}
+
+  ${renderLicenseSection(data.license)}
  
   ## Description
   
@@ -66,6 +68,9 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
+  - [Contributions](#credits)
+  - [Tests](#tests)
+  - [Questions](#questions)
      
   
   ## <a name="installation"></a>Installation
@@ -78,13 +83,21 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
+  ## <a name="credits"></a>Contributors
+
   ${data.credits}
+
+  ## <a name="tests"></a>Tests
 
   ${data.tests}
 
-  ${data.email}
+  ## <a name="questions"></a>Questions
 
-  ${data.github}
+  If you have questions regarding the ready-to-README application,
+  you can contact me directly by email at ${data.email} or reach out
+  to me on GitHub at https://www.github.com/${data.github}.
+
+ 
 `
 }
 
