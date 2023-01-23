@@ -36,6 +36,11 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
+  if(license === 'None'){
+    return '';
+
+  } else {
+
   return `
   ## <a name="license"></a>License
 
@@ -44,7 +49,7 @@ function renderLicenseSection(license) {
   ${renderLicenseBadge(license)}
 
   ${renderLicenseLink(license)}`
-
+  }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -63,7 +68,7 @@ function generateMarkdown(data) {
   - [License](#license)
      
   
-  ## <a name="installation"></a>Installaiton
+  ## <a name="installation"></a>Installation
   
   ${data.installation}
   
