@@ -18,13 +18,13 @@ function renderLicenseLink(license) {
   const licenseLink = license
 
   if (licenseLink === 'MIT') {
-    return `[MIT Link](https://www.mit.edu/~amini/LICENSE.md)`
+    return `[MIT License](https://www.mit.edu/~amini/LICENSE.md)`
   }
   if (licenseLink === 'Apache_2') {
-    return `[Apache 2 Link](https://www.apache.org/licenses/LICENSE-2.0.txt)`
+    return `[Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0.txt)`
   }
   if (licenseLink === 'GNU_GPL_3') {
-    return `[GNU_GPL_3](https://www.gnu.org/licenses/gpl-3.0.txt)`
+    return `[GNU_GPL_3 License](https://www.gnu.org/licenses/gpl-3.0.txt)`
   }
   else {
     return ``
@@ -44,9 +44,7 @@ function renderLicenseSection(license) {
   return `
   ## <a name="license"></a>License
 
-  This repo is licensed under ${license}
-  
-  ${renderLicenseBadge(license)}
+  This repo is licensed under the ${license} license.
 
   ${renderLicenseLink(license)}`
   }
@@ -58,7 +56,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}
  
   ## Description
   
