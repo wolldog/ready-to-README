@@ -1,6 +1,6 @@
 
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const licenseBadge = license
@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   
@@ -32,8 +32,8 @@ function renderLicenseLink(license) {
 
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README
+// If there is no license, return 'N/A'
 function renderLicenseSection(license) {
 
   if(license === 'None'){
@@ -50,7 +50,8 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
+
 function generateMarkdown(data) {
 
   return `
@@ -93,10 +94,9 @@ function generateMarkdown(data) {
 
   If you have questions regarding the ready-to-README application,
   you can contact me directly by email at ${data.email} or reach out
-  to me on GitHub at https://www.github.com/${data.github}.
+  to me on GitHub at https://www.github.com/${data.github}.`
 
- 
-`
 }
 
+//Makes the generateMarkdown function available to external calls
 module.exports = generateMarkdown;
