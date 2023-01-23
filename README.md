@@ -4,7 +4,7 @@
  
   ## Description
   
-  The ready-to-README application quickly produces a professional README.md file for use with GitHub projects. A README.md provides users with an overview of the what, what and how of a project and is always written in Markdown.
+  The ready-to-README application quickly produces a professional README.md file for use with GitHub projects. A README.md provides users with an overview of the what, why and how of a project and is always written in Markdown.
   
   ## Table of Contents
   - [Installation](#installation)
