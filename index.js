@@ -48,7 +48,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose the license that applies to your project',
-        choices: ['None', 'Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License'],
+        choices: ['None', 'Apache 2', 'GNU GPL 3', 'MIT'],
         default: 'None',
     },
     {
