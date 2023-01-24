@@ -21,7 +21,7 @@ const questions = [
         }
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'description',
         message: 'In a sentence or two, describe the what, why and how of your project.',
         //Require user to provide a title
