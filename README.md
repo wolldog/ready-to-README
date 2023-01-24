@@ -1,13 +1,12 @@
-
   # ready-to-README
 
-  ![License Badge](https://img.shields.io/badge/License-Apache_2-success)
+  ![License Badge](https://img.shields.io/badge/License-MIT-success)
  
   ## Description
   
-  The ready-to-README application quickly produces a professional README.md file for use with GitHub projects.
+  The ready-to-README application quickly produces a professional README.md file for use with GitHub projects. 
 
-A README.md provides users with an overview of the what, why and how of a project and is always written in Markdown.
+  A README.md provides users with an overview of the what, why and how of a project and is always written in Markdown.
   
   ## Table of Contents
   - [Installation](#installation)
@@ -20,23 +19,22 @@ A README.md provides users with an overview of the what, why and how of a projec
   
   ## <a name="installation"></a>Installation
   
-  Install node.js. Clone the project folder from GitHub to your local machine and run 'npm install' for the project folder in the command line
+  The application requires node.js to be installed on your computer. Clone the project folder from GitHub to your local machine. Navigate to the project folder on your machine and open a terminal window. Run ‘npm install’ from the command line. This will install the dependencies; inquirer v8.2.4 and node:fs.
   
   ## <a name="usage"></a>Usage
 
-  Type ‘node index.js’ in the command line and answer the series of questions provided. 
+  Type ‘node index.js’ from the command line and answer the series of questions provided. 
 
-Where an extended response is expected (description, usage), the input requests you open your preferred editor. When you have completed your response, close the editor. You will be prompted to save your response and your response will be confirmed by ‘Received’ being displayed as the input for the question.
+  Where an extended response is expected (description, usage), the input requests you open your preferred editor. When you have completed your response, close the editor. You will be prompted to save your response and your response will be confirmed by displaying ‘Received’ in the terminal input.
 
-Where a list of options is provided for your response (license) navigate up and down the list using the arrow key on your keyboard and select your chosen option by clicking the space bar.
+  Where a list of options is provided for your response (license) navigate up and down the list using the arrow key on your keyboard and select your chosen option by clicking the space bar.
 
-
-  
+ 
   ## <a name="license"></a>License
 
-  This repo is licensed under the Apache_2 license.
+  This repo is licensed under the MIT license.
 
-  [Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0.txt)
+  [MIT License](https://www.mit.edu/~amini/LICENSE.md)
 
   ## <a name="credits"></a>Contributors
 
