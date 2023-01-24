@@ -42,11 +42,18 @@ const questions = [
         default: 'N/A'
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'usage',
-        message: 'Describe how to use your application. If none, press Enter.',
+        message: 'Describe how to use your application.',
         //If user does not provide input, record N/A/
-        default: 'N/A'
+        validate: function (usage) {
+            if (usage) {
+                return true
+            } else {
+                console.log('Please add information on how to use your project')
+                return false
+            }
+        }
     },
     {
         type: 'list',
