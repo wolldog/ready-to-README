@@ -1,8 +1,10 @@
  # ready-to-README
+
+  ![License Badge](https://img.shields.io/badge/License-Apache_2-success)
  
   ## Description
   
-  This application will quickly produce a professional README.md file for your application from the command line.
+  The ready-to-README application quickly produces a professional README.md file for use with GitHub projects. A README.md provides users with an overview of the what, why and how of a project and is always written in Markdown.
   
   ## Table of Contents
   - [Installation](#installation)
@@ -15,20 +17,18 @@
   
   ## <a name="installation"></a>Installation
   
-  Clone this repo, intialize npm using 'npm init' the install dependancies using 'npm install'.
+  Install node.js. Clone the project folder from GitHub to your local machine and run ‘npm i’ from the project folder in the command line.
   
   ## <a name="usage"></a>Usage
 
-  Navigate to the repo folder on your machine and type node index.js.
+  Type ‘node index.js’ in the command line and answer the series of questions provided. 
 
   
   ## <a name="license"></a>License
 
-  This repo is licensed under MIT
-  
-  ![License Badge](https://img.shields.io/badge/License-MIT-success)
+  This repo is licensed under the Apache_2 license.
 
-  [MIT Link](https://www.mit.edu/~amini/LICENSE.md)
+  [Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
   ## <a name="credits"></a>Contributors
 
@@ -43,5 +43,3 @@
   If you have questions regarding the ready-to-README application,
   you can contact me directly by email at lydiawallis@live.co.uk or reach out
   to me on GitHub at https://www.github.com/wolldog.
-
- 
