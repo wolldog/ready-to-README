@@ -42,7 +42,7 @@ function renderLicenseSection(license) {
   } else {
 
   return `
-  ## <a name="license"></a>License
+  ## <a id="license"></a>License
 
   This repo is licensed under the ${license} license.
 
@@ -72,25 +72,25 @@ function generateMarkdown(data) {
   - [Questions](#questions)
      
   
-  ## <a name="installation"></a>Installation
+  ## <a id="installation"></a>Installation
   
   ${data.installation}
   
-  ## <a name="usage"></a>Usage
+  ## <a id="usage"></a>Usage
 
   ${data.usage}
 
   ${renderLicenseSection(data.license)}
 
-  ## <a name="credits"></a>Contributors
+  ## <a id="credits"></a>Contributors
 
   ${data.credits}
 
-  ## <a name="tests"></a>Tests
+  ## <a id="tests"></a>Tests
 
   ${data.tests}
 
-  ## <a name="questions"></a>Questions
+  ## <a id="questions"></a>Questions
 
   If you have questions regarding the ready-to-README application,
   you can contact me directly by email at ${data.email} or reach out
